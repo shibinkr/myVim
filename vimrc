@@ -1,4 +1,32 @@
-" Sets how many lines of history VIM has to remember
+""Vim plugin manager Pathogen
+"https://github.com/tpope/vim-pathogen.git
+set t_Co=256
+let g:Powerline_symbols = "fancy"
+
+filetype off
+call pathogen#infect()
+filetype plugin indent on
+
+filetype indent on      " load filetype-specific indent files
+
+"Plugin i use:
+"airline plugin : git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+"gitgutter :"cd ~/.vim/bundle; git clone git://github.com/airblade/vim-gitgutter.git
+
+
+"Setting for the airlineplugin
+let g:airline#extensions#tabline#enabled = 1
+
+"Separators can be configured independently for the tabline, so here is how
+"you can define "straight" tabs:
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '>'
+
+
+"Adding 2 lines to statusbar.
+set laststatus=2
+
+"" Sets how many lines of history VIM has to remember
 set history=700
 
 "Always show current position
@@ -44,9 +72,6 @@ set wrap "wrap lines
 set number
 set relativenumber
 set cursorline " highlight the current cursor.
-
-
-filetype indent on      " load filetype-specific indent files
 
 set wildmenu            " visual autocomplete for command menu
 
