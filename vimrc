@@ -1,8 +1,17 @@
 ""Vim plugin manager Pathogen
 "https://github.com/tpope/vim-pathogen.git
 
+"To uncomment and comment
+"press ctrl+v
+"select the lines
+"if to uncomment press 'd' or 'x'
+"if to comment press 'I' and type the comment symbol
+"press 'ESC'
+
 filetype off
 call pathogen#infect()
+call pathogen#helptags()
+
 filetype plugin indent on
 
 filetype indent on      " load filetype-specific indent files
@@ -18,6 +27,26 @@ filetype indent on      " load filetype-specific indent files
                   "change the font of the system with powerline.
 "vim-fugitive:  https://github.com/tpope/vim-fugitive.git
 "               for the git branch display.
+"vim-surround:  https://github.com/tpope/vim-surround.git
+"               example press 'VS' and enter the tag.
+"               delete surrounding tag 'dst'
+"               tag in a line : visual word 'S' tag
+"               change the surrounding tag: cst - same line without indent.
+"               change the surrounding tag: cSt - same line with indent and
+"               newline.
+"               add new tag or symbol  : 'ys' and select the portion and add tag or symbol                  
+"               <eample>ysiw</eample>"
+"vim-snipmate:  https://github.com/garbas/vim-snipmate  
+"               Copy the different snippets to folder ~/.vim/bundle/snippets/
+"               from the url
+"               https://github.com/msanders/snipmate.vim/tree/master/snippets
+"               Type <token> tab.
+"               <example>html <tab></example>
+"
+"mru         :   https://github.com/yegappan/mru.git
+"            :   :MRU
+"
+"
 
 set encoding=utf-8
 set t_Co=256
