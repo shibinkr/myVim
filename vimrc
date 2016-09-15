@@ -36,6 +36,7 @@ filetype indent on      " load filetype-specific indent files
 "               newline.
 "               add new tag or symbol  : 'ys' and select the portion and add tag or symbol                  
 "               <eample>ysiw</eample>"
+"               add new tag to line    : 'yss<tag>'
 "vim-snipmate:  https://github.com/garbas/vim-snipmate  
 "               Copy the different snippets to folder ~/.vim/bundle/snippets/
 "               from the url
